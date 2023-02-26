@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="395.0" prefWidth="669.0" style="-fx-background-color: b9e008;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alumnos.AlumneController">
+   <children>
+      <Label layoutX="51.0" layoutY="14.0" text="ALUMNES">
+         <font>
+            <Font name="Franklin Gothic Demi" size="47.0" />
+         </font>
+      </Label>
+      <Button id="btn_crear" layoutX="21.0" layoutY="294.0" mnemonicParsing="false" onAction="#Add" prefHeight="37.0" prefWidth="76.0" text="CREAR" />
+      <Button id="btn_editar" layoutX="110.0" layoutY="294.0" mnemonicParsing="false" onAction="#Update" prefHeight="37.0" prefWidth="76.0" text="EDITAR" />
+      <Button id="btn_eliminar" layoutX="198.0" layoutY="294.0" mnemonicParsing="false" onAction="#Delete" prefHeight="37.0" prefWidth="76.0" text="ELIMINAR" />
+      <TextField fx:id="txt_nom" layoutX="127.0" layoutY="83.0" />
+      <TextField fx:id="txt_cognom" layoutX="124.0" layoutY="129.0" />
+      <TextField fx:id="txt_curs" layoutX="124.0" layoutY="174.0" />
+      <TextField fx:id="txt_data" layoutX="124.0" layoutY="224.0" />
+      <Label layoutX="87.0" layoutY="87.0" text="Nom:" />
+      <Label layoutX="28.0" layoutY="228.0" text="Data Naixement:" />
+      <Label layoutX="51.0" layoutY="178.0" text="Curs Actual:" />
+      <Label layoutX="70.0" layoutY="133.0" text="Cognom:" />
+      <TableView fx:id="table" layoutX="300.0" layoutY="26.0" prefHeight="339.0" prefWidth="353.0" style="-fx-background-color: b9e008;">
+        <columns>
+          <TableColumn fx:id="columna_nom" prefWidth="42.0" text="Nom" />
+          <TableColumn fx:id="columna_cognom" prefWidth="64.0" text="Cognom" />
+            <TableColumn fx:id="columna_curs" prefWidth="87.0" text="Curs Actual" />
+            <TableColumn fx:id="columna_data" prefWidth="120.0" text="Data Naixement" />
+            <TableColumn fx:id="columna_id" prefWidth="140.0" text="ID" />
+        </columns>
+      </TableView>
+      <Button id="btn_exit" layoutX="14.0" layoutY="347.0" minWidth="40.0" mnemonicParsing="false" onAction="#Exit" prefHeight="37.0" prefWidth="54.0" text="EXIT" textFill="#f80808">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

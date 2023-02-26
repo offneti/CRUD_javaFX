@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="395.0" prefWidth="669.0" style="-fx-background-color: b9e008;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Moduls.ModuloController">
+    <children>
+        <Label layoutX="51.0" layoutY="14.0" text="MODULS">
+            <font>
+                <Font name="Malgun Gothic Semilight" size="47.0" />
+            </font>
+        </Label>
+        <Button id="btn_crear" fx:id="btn_crear" layoutX="51.0" layoutY="216.0" mnemonicParsing="false" onAction="#Add" prefHeight="37.0" prefWidth="76.0" text="CREAR" />
+        <Button id="btn_editar" fx:id="btn_editar" layoutX="161.0" layoutY="216.0" mnemonicParsing="false" onAction="#Update" prefHeight="37.0" prefWidth="76.0" text="EDITAR" />
+        <Button id="btn_eliminar" fx:id="btn_eliminar" layoutX="276.0" layoutY="216.0" mnemonicParsing="false" onAction="#Delete" prefHeight="37.0" prefWidth="76.0" text="ELIMINAR" />
+        <TextField fx:id="txt_modul" layoutX="125.0" layoutY="96.0" />
+        <TextField fx:id="txt_idProfesor" layoutX="125.0" layoutY="150.0" />
+        <Label layoutX="28.0" layoutY="100.0" text="Tipus de Modul:" />
+        <Label layoutX="28.0" layoutY="154.0" text="Id del Professor:" />
+        <TableView fx:id="table" layoutX="368.0" layoutY="28.0" prefHeight="200.0" prefWidth="277.0" style="-fx-background-color: gr b9e008ay;">
+            <columns>
+                <TableColumn fx:id="columna_nom_modul" prefWidth="78.0" text="Nom" />
+                <TableColumn fx:id="columna_idProfesor" prefWidth="85.0" text="ID Professor" />
+                <TableColumn fx:id="columna_professor" minWidth="0.0" prefWidth="113.0" text="Professor" />
+            </columns>
+        </TableView>
+        <Button id="btn_exit" fx:id="btn_exit" layoutX="14.0" layoutY="359.0" minWidth="40.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="44.0" text="EXIT" textFill="#f80808">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+      <TableView layoutX="370.0" layoutY="246.0" prefHeight="139.0" prefWidth="287.0" style="-fx-background-color: gr b9e008ay;">
+        <columns>
+            <TableColumn fx:id="columna_nom"  prefWidth="92.0" text="Nom" />
+            <TableColumn fx:id="columna_cognom" prefWidth="146.0" text="Cognom" />
+            <TableColumn fx:id="id_profesores" prefWidth="54.0" text="ID" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
